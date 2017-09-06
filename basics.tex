@@ -1,0 +1,52 @@
+\documentclass[a4paper, 14 pt, final]{extarticle}
+\newcommand{\nosection}[1]{%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \markright{#1}}
+\usepackage{mystyle}
+
+\begin{document}
+%\includepdf[pages={-}]{title.pdf}
+\selectlanguage{russian}
+\title{Некоторые детали *nix экосистем}
+
+\author{Александр Николаев}
+
+\maketitle
+
+\newpage
+\selectlanguage{russian}
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+%\setcounter{page}{3}
+\tableofcontents
+\newpage
+
+\input{tex/intro}
+\input{tex/terminal}
+\input{tex/commands}
+\input{tex/users}
+\input{tex/file_system}
+\input{tex/files_folders}
+\input{tex/processes}
+\input{tex/system}
+\input{tex/shell}
+\input{tex/pipes}
+\input{tex/editors}
+\input{tex/packet_management}
+\input{tex/cron}
+\input{tex/working_with_files}
+\input{tex/shell_scripting}
+\appendix
+\input{tex/network}
+\input{tex/X_server}
+\input{tex/ssh}
+\input{tex/ftp}
+\input{tex/hashes}
+\input{tex/availability}
+\input{tex/docker}
+\input{tex/virtualization}
+\input{tex/git_usage}
+\input{tex/TeX}
+
+\end{document}
